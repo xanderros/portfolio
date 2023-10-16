@@ -330,7 +330,7 @@ function App() {
 			<div ref={app}>
 				<Helmet>
 					<script type="application/ld+json">
-						{`
+						{JSON.stringify({
 							"@context": "https://schema.org",
 							"@type": "CollectionPage",
 							"name": "Works by Alexander Kuleshov",
@@ -375,7 +375,7 @@ function App() {
 									"url": "http://azarenok.com/"
 								}
 							]
-						`}
+						})}
 					</script>
 				</Helmet>
 				<Header/>

@@ -1,0 +1,42 @@
+export default [
+	{
+		first: true,
+		site: 'Readsom',
+		desc: 'App to discover newsletters',
+		tech: 'HTML, SCSS, JS, Flask',
+		link: 'https://readsom.com/',
+		img: 'project_readsom',
+	},
+	{
+		site: 'Event Registry',
+		desc: 'News intelligence platform',
+		tech: 'HTML, SCSS, JS, Animations',
+		color: 'rgb(231, 234, 255)',
+		link: 'https://eventregistry.org/',
+		img: 'project_eventregistry',
+	},
+	{
+		site: 'Echobox',
+		desc: 'AI-driven social media platform for publishers',
+		tech: 'HTML, SCSS, JS/jQuery, Animations',
+		color: 'rgb(221, 244, 255)',
+		link: 'https://www.echobox.com/',
+		img: 'project_echobox',
+	},
+	{
+		site: 'Wolves of Analytics',
+		desc: 'Advanced digital analytics service',
+		tech: 'HTML, Bootstrap, SCSS, JS/jQuery, Animations',
+		color: 'rgb(255, 250, 230)',
+		link: 'https://www.wolvesofanalytics.com/',
+		img: 'project_wolvesofanalytics',
+	},
+	{
+		site: 'Azarenok',
+		desc: 'Website for cool designer',
+		tech: 'HTML, LESS, JS/jQuery, Animations',
+		color: 'rgb(236, 235, 255)',
+		link: 'http://azarenok.com/',
+		img: 'project_azarenok',
+	},
+]

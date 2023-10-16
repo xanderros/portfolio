@@ -1,0 +1,72 @@
+// XX-Small devices (portrait phones, less than 360px)
+$screen-xs-max: 359.98px;
+
+// X-Small devices (portrait phones, less than 576px)
+$screen-sm-max: 575.98px;
+
+// Small devices (landscape phones, less than 768px)
+$screen-md-max: 767.98px;
+
+// Medium devices (tablets, less than 992px)
+$screen-lg-max: 991.98px;
+
+// Large devices (desktops, tablets less than 1200px)
+$screen-xl-max: 1199.98px;
+
+// X-Small devices height (landscape phones, less than 500px of height)
+$screen-x-height-max: 499.98px;
+
+// XX-Small devices
+@mixin xs {
+	@media (max-width: #{$screen-xs-max}) {
+		@content;
+	}
+}
+
+// X-Small devices
+@mixin sm {
+	@media (max-width: #{$screen-sm-max}) {
+		@content;
+	}
+}
+
+// Small devices
+@mixin md {
+	@media (max-width: #{$screen-md-max}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin lg {
+	@media (max-width: #{$screen-lg-max}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin xl {
+	@media (max-width: #{$screen-xl-max}) {
+		@content;
+	}
+}
+
+// Landscape phones (<500px of the height)
+@mixin phones-landscape {
+	@media (max-height: #{$screen-x-height-max}) {
+		@content;
+	}
+}
+
+// Custom breakpoints
+@mixin min($screen) {
+	@media (min-width: $screen+'px') {
+		@content;
+	}
+}
+
+@mixin max($screen) {
+	@media (max-width: $screen+'px') {
+		@content;
+	}
+}

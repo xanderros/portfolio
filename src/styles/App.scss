@@ -1232,19 +1232,19 @@ $projectsFirstPin: 190vh;
 	padding: 20px 40px;
 	transition: background-color var(--transition-default), border-color var(--transition-default), color var(--transition-default);
 
-	&__bg {
+	&:before {
+		content: '';
 		display: block;
 		position: absolute;
 		top: 100%;
-		left: 0;
-		right: 0;
-		height: 100%;
+		left: -10px;
+		right: -10px;
+		height: 110%;
 		background-color: var(--green);
-		border-radius: 25%;
+		border-radius: inherit;
 		transition: transform var(--transition-default);
 	}
 	&__text {
-		display: block;
 		position: relative;
 	}
 
@@ -1258,7 +1258,7 @@ $projectsFirstPin: 190vh;
 	}
 
 	&:hover {
-		.btn__bg {
+		&:before {
 			transform: translate3d(0,-100%,0);
 		}
 	}

@@ -11,10 +11,10 @@ function Hero() {
 						</div>
 						<div className="hero__figure">
 							<picture>
-								<source type="image/webp" media="(max-width: 575px)" srcSet="https://alexkuleshov.com/src/images/avatar_alex_mob.webp, https://alexkuleshov.com/src/images/avatar_alex_mob@2x.webp 2x" />
-								<source media="(max-width: 575px)" srcSet="https://alexkuleshov.com/src/images/avatar_alex_mob.jpg, https://alexkuleshov.com/src/images/avatar_alex_mob@2x.jpg 2x" />
-								<source type="image/webp" media="(min-width: 576px)" srcSet="https://alexkuleshov.com/src/images/avatar_alex.webp, https://alexkuleshov.com/src/images/avatar_alex@2x.webp 2x" />
-								<img className="hero__img" src="https://alexkuleshov.com/src/images/avatar_alex.jpg" srcSet="https://alexkuleshov.com/src/images/avatar_alex@2x.jpg 2x" width="340"height="340" alt="Alexander Kuleshov | Front End Developer" />
+								<source type="image/webp" media="(max-width: 575px)" srcSet="/src/images/avatar_alex_mob.webp, /src/images/avatar_alex_mob@2x.webp 2x" />
+								<source media="(max-width: 575px)" srcSet="/src/images/avatar_alex_mob.jpg, /src/images/avatar_alex_mob@2x.jpg 2x" />
+								<source type="image/webp" media="(min-width: 576px)" srcSet="/src/images/avatar_alex.webp, /src/images/avatar_alex@2x.webp 2x" />
+								<img className="hero__img" src="/src/images/avatar_alex.jpg" srcSet="/src/images/avatar_alex@2x.jpg 2x" width="340" height="340" alt="Alexander Kuleshov | Front End Developer" />
 							</picture>
 						</div>
 					</div>

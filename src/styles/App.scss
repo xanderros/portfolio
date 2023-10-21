@@ -158,9 +158,7 @@ body {
 	}
 
 	&_about {
-		min-height: 100vh;
-		display: flex;
-		align-items: center;
+		height: 370vh;
 	}
 }
 
@@ -297,24 +295,12 @@ body {
 
 		@include lg {
 			font-size: 32px;
-
-			.icon {
-				width: 32px;
-			}
 		}
 		@include md {
 			font-size: 24px;
-
-			.icon {
-				width: 24px;
-			}
 		}
 		@include phones-landscape {
 			font-size: 20px;
-
-			.icon {
-				width: 20px;
-			}
 		}
 	}
 	&__list {
@@ -837,31 +823,37 @@ $projectsFirstPin: 190vh;
 	}
 }
 
-.desc {
-	font-size: 50px;
-	line-height: 1.4;
-	font-weight: 500;
-
-	@include xl {
-		font-size: 46px;
-	}
-	@include lg {
-		font-size: 40px;
-	}
-	@include md {
-		font-size: 32px;
-	}
-	@include sm {
-		line-height: 1.5;
-		font-size: 24px;
-	}
-	@include xs {
-		font-size: 20px;
-	}
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	position: sticky;
+	top: 0;
 
 	&__chars {
 		width: 100%;
 		font-kerning: none;
+		font-size: 50px;
+		line-height: 1.4;
+		font-weight: 500;
+
+		@include xl {
+			font-size: 46px;
+		}
+		@include lg {
+			font-size: 40px;
+		}
+		@include md {
+			font-size: 32px;
+		}
+		@include sm {
+			line-height: 1.5;
+			font-size: 24px;
+		}
+		@include xs {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -918,6 +910,8 @@ $projectsFirstPin: 190vh;
 }
 
 .icon {
+	width: 1em;
+
 	path {
 		transition: fill var(--transition-default);
 	}
@@ -1251,10 +1245,6 @@ $projectsFirstPin: 190vh;
 	@include sm {
 		font-size: 16px;
 		padding: 15px 30px;
-
-		.icon {
-			width: 16px;
-		}
 	}
 
 	&:hover {

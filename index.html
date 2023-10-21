@@ -20,10 +20,6 @@
     <link rel="preload" href="/src/fonts/inter-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/src/fonts/inter-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- hero image preload -->
-    <link rel="preload" as="image" imagesrcset="https://alexkuleshov.com/src/images/avatar_alex_mob.webp, https://alexkuleshov.com/src/images/avatar_alex_mob@2x.webp 2x" media="(max-width: 575px)">
-    <link rel="preload" as="image" imagesrcset="https://alexkuleshov.com/src/images/avatar_alex.webp, https://alexkuleshov.com/src/images/avatar_alex@2x.webp 2x"  media="(min-width: 576px)">
-
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/src/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicons/favicon-32x32.png">
@@ -57,34 +53,7 @@
 
     <!-- Google tag manager -->
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var gtm_timer,
-            gtm_loaded = false;
-
-        if(localStorage.getItem('gtm')) {
-          gtm_load();
-        } else {
-          localStorage.setItem('gtm', 1);
-          gtm_timer = setTimeout(gtm_load, 5000);
-          document.body.addEventListener('click', gtm_load);
-          document.body.addEventListener('mouseenter', gtm_load);
-          document.body.addEventListener('touchstart', gtm_load);
-        }
-        function gtm_load() {
-          if(gtm_loaded) {
-            return;
-          }
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-5MSG8LLS');
-          gtm_loaded = true;
-          document.body.removeEventListener('click', gtm_load);
-          document.body.removeEventListener('mouseenter', gtm_load);
-          document.body.removeEventListener('touchstart', gtm_load);
-          clearTimeout(gtm_timer);
-        }
-      })
+      document.addEventListener("DOMContentLoaded",function(){var e,t=!1;function n(){if(!t){var r,a,o,s,d="script",m="dataLayer";r=window,a=document,r[m]=r[m]||[],r[m].push({"gtm.start":new Date().getTime(),event:"gtm.js"}),o=a.getElementsByTagName(d)[0],(s=a.createElement(d)).async=!0,s.src="https://www.googletagmanager.com/gtm.js?id=GTM-5MSG8LLS"+("dataLayer"!=m?"&l="+m:""),o.parentNode.insertBefore(s,o),t=!0,document.body.removeEventListener("click",n),document.body.removeEventListener("mouseenter",n),document.body.removeEventListener("touchstart",n),clearTimeout(e)}}localStorage.getItem("gtm")?n():(localStorage.setItem("gtm",1),e=setTimeout(n,5e3),document.body.addEventListener("click",n),document.body.addEventListener("mouseenter",n),document.body.addEventListener("touchstart",n))});
     </script>
   </body>
 </html>

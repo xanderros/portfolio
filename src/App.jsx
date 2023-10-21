@@ -45,7 +45,6 @@ function App() {
 
 			// ----- animations
 			const wrapper = document.querySelector('.wrapper');
-			const bgColorDefault = "rgb(240, 251, 243)";
 
 			//**** Projects vars
 			const titleSection = document.querySelector('.section__title');
@@ -106,16 +105,8 @@ function App() {
 			}
 
 			// Split chars in About section
-			const aboutSection = document.querySelector('.section_about');
-			const aboutChars = gsap.utils.toArray('.desc__chars');
-
-			ScrollTrigger.create({
-				trigger: aboutSection,
-				start: 'top top',
-				end: () => {return "+=" + windowHeight * 2.7},
-				pin: true,
-				invalidateOnRefresh: true,
-			});
+			const aboutSection = document.querySelector('.section_about');// set end point in CSS .section_about: 370vh = 3.7 windowHeight
+			const aboutChars = gsap.utils.toArray('.about__chars');
 
 			aboutChars.forEach((char) => {
 
@@ -226,52 +217,43 @@ function App() {
 						.fromTo(projectsContentFirst, {opacity: 0}, {opacity: 1, duration: 0}, 'project_show')
 						.fromTo(projectsCoverFirst, {opacity: 0}, {opacity: 1, duration: 0}, 'project_show');
 
-				// Projects images and background color animations
+				// Projects images animations
 				projectsContents.forEach((project, i) => {
-
-					let projectTl = gsap.timeline();
-
-					let bgColor = project.getAttribute('data-color');
-
-					ScrollTrigger.create({
-						animation: projectTl,
-						trigger: projects,
-						start: () => {
-							return "+=" + windowHeight * (i + projectsStartPoint)
-						},
-						end: () => {
-							return "+=" + projectsEndPoint * windowHeight
-						},
-						scrub: true,
-						invalidateOnRefresh: true,
+					gsap.to(projectsCovers[i], {
+						height: "100%",
+						ease: "power.in",
+						scrollTrigger: {
+							trigger: projects,
+							start: () => { return "+=" + windowHeight * (i + projectsStartPoint) },
+							end: () => { return "+=" + projectsEndPoint * windowHeight },
+							scrub: true,
+							invalidateOnRefresh: true,
+						}
 					});
-
-					projectTl
-							.to(projectsCovers[i], {
-								height: "100%",
-								ease: "power.in",
-							}, "project")
-							.to(wrapper, {
-								backgroundColor: bgColor,
-								immediateRender: true,
-							}, "project");
-
 				});
 
-				// set projects background color to default value
-				gsap.to(wrapper, {
-					backgroundColor: bgColorDefault,
-					immediateRender: true,
-					scrollTrigger: {
-						trigger: '#experience',
-						start: "top bottom",
-						end: () => {
-							return "+=" + windowHeight
-						},
-						scrub: true,
-						invalidateOnRefresh: true,
-					}
+				// Projects background animations
+				const bgColorDefault = "#f0fbf3";
+
+				let projectBgTl = gsap.timeline();
+
+				ScrollTrigger.create({
+					animation: projectBgTl,
+					trigger: projects,
+					start: () => { return "+=" + windowHeight },
+					end: "bottom top",
+					scrub: true,
+					invalidateOnRefresh: true,
 				});
+
+				const bgColorElements = projects.querySelectorAll('[data-color]');
+
+				bgColorElements.forEach((bgColorElement) => {
+					let bgColor = bgColorElement.getAttribute('data-color');
+					projectBgTl.to(wrapper, { backgroundColor: bgColor });
+				});
+
+				projectBgTl.to(wrapper, { backgroundColor: bgColorDefault });
 
 				// experience rows animations
 				const experienceRows = gsap.utils.toArray('.exp__row');

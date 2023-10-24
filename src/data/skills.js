@@ -27,7 +27,7 @@ export default [
 		skill: 'SCSS / SASS / LESS',
 	},
 	{
-		skill: 'Pug / Nunjucks / Jinja2',
+		skill: 'Nunjucks / Pug / Jinja2',
 	},
 	{
 		skill: 'Flexbox & Grid / Bootstrap',

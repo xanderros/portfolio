@@ -198,7 +198,7 @@ function App() {
 						// E letter transform
 						.to(titleETop, {scaleX: 0.45, scaleY: 0.5, y: 87, duration: durationDefault}, 'letters_transform')
 						.to(titleEMiddle, {scaleX: 2.37, scaleY: 0.8, y: 7, duration: durationDefault}, 'letters_transform')
-						.to(titleEBottom, {scaleX: 0.88, scaleY: 0.5, y: -82, duration: durationDefault}, 'letters_transform')
+						.to(titleEBottom, {scaleX: 1.12, scaleY: 0.5, y: -82, duration: durationDefault}, 'letters_transform')
 
 						// T letter transform
 						.fromTo(titleTWrap, {scaleX: 0.944, scaleY: 0.694}, {scale: 1, duration: durationDefault}, 'letters_transform')

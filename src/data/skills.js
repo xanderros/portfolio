@@ -27,16 +27,13 @@ export default [
 		skill: 'SCSS / SASS / LESS',
 	},
 	{
-		skill: 'Nunjucks / Pug / Jinja2',
+		skill: 'Nunjucks / Twig / Pug / Jinja2',
 	},
 	{
 		skill: 'Flexbox & Grid / Bootstrap',
 	},
 	{
 		skill: 'React',
-	},
-	{
-		skill: 'JSON',
 	},
 	{
 		skill: 'jQuery',

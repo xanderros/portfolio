@@ -34,7 +34,8 @@ or with `npm`:
 npm run dev
 ```
 
-#### 3. Open development URL - [`http://localhost:5173/`](http://localhost:5173/). 
+#### 3. Open development URL - [`http://localhost:5173/`](http://localhost:5173/).
+
 Or open the URL from the command line
 
 #### 4. Build production version:

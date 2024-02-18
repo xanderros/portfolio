@@ -1,6 +1,6 @@
-function ProjectText({ link, img, alt, site, desc, tech, color, first }) {
-  const imgPath = "/src/images/";
+const imageUrl = process.env.REACT_APP_IMAGE_URL;
 
+function ProjectText({ link, img, alt, site, desc, tech, color, first }) {
   return (
     <div
       className={
@@ -25,25 +25,19 @@ function ProjectText({ link, img, alt, site, desc, tech, color, first }) {
           >
             <picture>
               <source
-                type="image/webp"
-                media="(min-width: 1024px)"
-                srcSet="/src/images/placeholder.webp"
+                media="(min-width: 768px)"
+                srcSet={`${imageUrl}/${img}.png?tr=w-300,h-300,dpr-1, ${imageUrl}/${img}.png?tr=w-300,h-300,dpr-2 2x`}
               />
               <source
                 media="(min-width: 1024px)"
-                srcSet="/src/images/placeholder.png"
-              />
-              <source
-                type="image/webp"
-                media="(max-width: 1023px)"
-                srcSet={`${imgPath}${img}_mob.webp, ${imgPath}${img}_mob@2x.webp 2x`}
+                srcSet={`${imageUrl}/placeholder.png`}
               />
               <img
                 className="projects__img-mob"
-                src={`${imgPath}${img}_mob.png`}
-                srcSet={`${imgPath}${img}_mob@2x.png 2x`}
-                width="500"
-                height="500"
+                src={`${imageUrl}/${img}.png?tr=w-372,h-372,dpr-1`}
+                srcSet={`${imageUrl}/${img}.png?tr=w-372,h-372,dpr-2 2x`}
+                width="372"
+                height="372"
                 alt={alt}
               />
             </picture>

@@ -1,6 +1,6 @@
-function ProjectFigure({ link, img, alt, first }) {
-  const imgPath = "/src/images/";
+const imageUrl = process.env.REACT_APP_IMAGE_URL;
 
+function ProjectFigure({ link, img, alt, first }) {
   return (
     <div
       className={
@@ -18,22 +18,12 @@ function ProjectFigure({ link, img, alt, first }) {
         <picture>
           <source
             media="(max-width: 1023px)"
-            srcSet="/src/images/placeholder.png"
-          />
-          <source
-            type="image/webp"
-            media="(max-width: 1023px)"
-            srcSet="/src/images/placeholder.webp"
-          />
-          <source
-            type="image/webp"
-            media="(min-width: 1024px)"
-            srcSet={`${imgPath}${img}.webp, ${imgPath}${img}@2x.webp 2x`}
+            srcSet={`${imageUrl}/placeholder.png`}
           />
           <img
             className="projects__img"
-            src={`${imgPath}${img}.png`}
-            srcSet={`${imgPath}${img}@2x.png 2x`}
+            src={`${imageUrl}/${img}.png?tr=w-314,h-520,dpr-1`}
+            srcSet={`${imageUrl}/${img}.png?tr=w-314,h-520,dpr-2 2x`}
             width="314"
             height="520"
             alt={alt}

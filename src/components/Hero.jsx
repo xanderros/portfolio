@@ -1,3 +1,5 @@
+const imageUrl = process.env.REACT_APP_IMAGE_URL;
+
 function Hero() {
   return (
     <section className="hero">
@@ -13,23 +15,21 @@ function Hero() {
           <div className="hero__figure">
             <picture>
               <source
-                type="image/webp"
-                media="(max-width: 575px)"
-                srcSet="/src/images/avatar_alex_mob.webp, /src/images/avatar_alex_mob@2x.webp 2x"
+                media="(max-width: 359px)"
+                srcSet={`${imageUrl}/avatar_alex.jpg?tr=w-200,h-200,dpr-1, ${imageUrl}/avatar_alex.jpg?tr=w-200,h-200,dpr-2 2x`}
               />
               <source
                 media="(max-width: 575px)"
-                srcSet="/src/images/avatar_alex_mob.jpg, /src/images/avatar_alex_mob@2x.jpg 2x"
+                srcSet={`${imageUrl}/avatar_alex.jpg?tr=w-240,h-240,dpr-1, ${imageUrl}/avatar_alex.jpg?tr=w-240,h-240,dpr-2 2x`}
               />
               <source
-                type="image/webp"
-                media="(min-width: 576px)"
-                srcSet="/src/images/avatar_alex.webp, /src/images/avatar_alex@2x.webp 2x"
+                media="(max-width: 767px)"
+                srcSet={`${imageUrl}/avatar_alex.jpg?tr=w-260,h-260,dpr-1, ${imageUrl}/avatar_alex.jpg?tr=w-260,h-260,dpr-2 2x`}
               />
               <img
                 className="hero__img"
-                src="/src/images/avatar_alex.jpg"
-                srcSet="/src/images/avatar_alex@2x.jpg 2x"
+                src={`${imageUrl}/avatar_alex.jpg?tr=w-340,h-340,dpr-1`}
+                srcSet={`${imageUrl}/avatar_alex.jpg?tr=w-340,h-340,dpr-2 2x`}
                 width="340"
                 height="340"
                 alt="Alexander Kuleshov | Front End Developer"

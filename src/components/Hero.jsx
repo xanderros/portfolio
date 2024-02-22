@@ -8,8 +8,7 @@ function Hero() {
           <div className="hero__desc">
             <div className="hero__name">Hi, I'm Alex</div>
             <h1 className="hero__title">
-              I enjoy building robust frontend products with great user
-              experience
+              Creator of user-friendly web applications.
             </h1>
           </div>
           <div className="hero__figure">

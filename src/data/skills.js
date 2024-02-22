@@ -1,19 +1,28 @@
 export default [
   {
+    skill: "JavaScript (ES6+)",
+    main: true,
+  },
+  {
     skill: "HTML5 & CSS3",
     main: true,
   },
   {
-    skill: "JavaScript",
+    skill: "React",
     main: true,
   },
   {
-    skill: "React / Redux",
+    skill: "Redux",
     main: true,
   },
   {
-    skill: "Pixel perfect responsive design",
-    main: true,
+    skill: "Redux Toolkit",
+  },
+  {
+    skill: "Redux Thunks",
+  },
+  {
+    skill: "Responsive design",
   },
   {
     skill: "SCSS / SASS / LESS",
@@ -22,16 +31,7 @@ export default [
     skill: "Flexbox & Grid",
   },
   {
-    skill: "Nunjucks / Twig / Pug",
-  },
-  {
     skill: "BEM methodology",
-  },
-  {
-    skill: "Bootstrap / Tailwind",
-  },
-  {
-    skill: "Reusable code and libraries",
   },
   {
     skill: "GSAP animations",
@@ -44,9 +44,6 @@ export default [
   },
   {
     skill: "Google Page speed score > 90 for mobile and desktop",
-  },
-  {
-    skill: "Cross-browser",
   },
   {
     skill: "Vite / Gulp / Webpack",
@@ -64,13 +61,19 @@ export default [
     skill: "User experience",
   },
   {
-    skill: "Figma / Sketch / Zeplin / InVision",
+    skill: "Figma",
   },
   {
-    skill: "Eye for design",
+    skill: "React testing library",
+  },
+  {
+    skill: "Jest",
   },
   {
     skill: "Debugging",
+  },
+  {
+    skill: "ESLint",
   },
   {
     skill: "Agile / Scrum",

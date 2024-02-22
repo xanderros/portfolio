@@ -8,10 +8,10 @@ function About() {
             data-bg-color="#b7c0bb"
             data-fg-color="#111"
           >
-            I have extensive experience transforming designs into pixel perfect,
-            responsive, accessible interfaces with a great user experience. I
-            enjoy writing high-quality, scalable and reusable code. Optimizing
-            websites for maximum speed and performance.
+            Front End Developer proficient in JavaScript, HTML, CSS and React,
+            with a strong focus on delivering high-quality, user-friendly web
+            applications that meet business requirements. Collaborative team
+            player with excellent problem-solving skills.
           </p>
         </div>
       </div>

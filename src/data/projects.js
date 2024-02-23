@@ -13,7 +13,6 @@ export default [
     desc: "Fashion brand shop with online ordering (NDA)",
     tech: "React, React Router, Redux Toolkit, Redux Thunk, React testing library, Jest, HTML5, SCSS, JS",
     color: "#fcead4",
-    link: "",
     img: "project_fashion",
   },
   {
@@ -69,7 +68,6 @@ export default [
   //   desc: "Remote servicing of BMW cars at Bayernkraft dealerships",
   //   tech: "HTML5, LESS, JS",
   //   color: "#fffae6",
-  //   link: "",
   //   img: "project_bayernkraft",
   // },
 ];

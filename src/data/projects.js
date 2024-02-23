@@ -8,6 +8,15 @@ export default [
     img: "project_readsom",
   },
   {
+    site: "E-commerce (fashion industry)",
+    // desc: "Online fashion brand shop",
+    desc: "Fashion brand shop with online ordering (NDA)",
+    tech: "React, React Router, Redux Toolkit, Redux Thunk, React testing library, Jest, HTML5, SCSS, JS",
+    color: "#fffae6",
+    link: "",
+    img: "project_fashion",
+  },
+  {
     site: "Tik-tak",
     desc: "Food Delivery Service",
     tech: "HTML5, LESS, JS, React",
@@ -55,4 +64,12 @@ export default [
     link: "https://ronin.by/",
     img: "project_ronin",
   },
+  // {
+  //   site: "Bayernkraft",
+  //   desc: "Remote servicing of BMW cars at Bayernkraft dealerships",
+  //   tech: "HTML5, LESS, JS",
+  //   color: "#fffae6",
+  //   link: "",
+  //   img: "project_bayernkraft",
+  // },
 ];

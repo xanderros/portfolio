@@ -26,7 +26,7 @@ function ProjectText({ link, img, alt, site, desc, tech, color, first }) {
             <picture>
               <source
                 media="(min-width: 768px)"
-                srcSet={`${imageUrl}/${img}.png?tr=w-300,h-300,dpr-1, ${imageUrl}/${img}.png?tr=w-300,h-300,dpr-2 2x`}
+                srcSet={`${imageUrl}/${img}_mob.png?tr=w-300,h-300,dpr-1, ${imageUrl}/${img}_mob.png?tr=w-300,h-300,dpr-2 2x`}
               />
               <source
                 media="(min-width: 1024px)"
@@ -34,8 +34,8 @@ function ProjectText({ link, img, alt, site, desc, tech, color, first }) {
               />
               <img
                 className="projects__img-mob"
-                src={`${imageUrl}/${img}.png?tr=w-372,h-372,dpr-1`}
-                srcSet={`${imageUrl}/${img}.png?tr=w-372,h-372,dpr-2 2x`}
+                src={`${imageUrl}/${img}_mob.png?tr=w-372,h-372,dpr-1`}
+                srcSet={`${imageUrl}/${img}_mob.png?tr=w-372,h-372,dpr-2 2x`}
                 width="372"
                 height="372"
                 alt={alt}

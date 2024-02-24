@@ -22,6 +22,9 @@ export default [
     skill: "Redux Thunks",
   },
   {
+    skill: "React Query",
+  },
+  {
     skill: "Responsive design",
   },
   {

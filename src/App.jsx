@@ -143,6 +143,7 @@ function App() {
 
       // Split chars in Contact section
       const contactChars = document.querySelector(".contact__caption_animate");
+      // const contactChars = document.querySelector(".contact");
       const contactLine = document.querySelector(".contact__line");
 
       const contactText = new SplitType(contactChars, {
@@ -154,8 +155,9 @@ function App() {
       ScrollTrigger.create({
         animation: contactTl,
         trigger: contactChars,
-        start: "bottom bottom",
-        scrub: false,
+        start: "center bottom",
+        // start: "bottom bottom",
+        // scrub: false,
       });
 
       contactTl
@@ -165,7 +167,7 @@ function App() {
           {
             scale: 1,
             duration: 0.12,
-            stagger: { amount: 0.6 },
+            stagger: { amount: 0.4 },
             ease: "power1.out",
           },
           "contact_show"
@@ -173,7 +175,7 @@ function App() {
         .fromTo(
           contactLine,
           { scaleX: 0 },
-          { scaleX: 1, duration: 1.3, ease: "power1.out" },
+          { scaleX: 1, duration: 1.0, ease: "power1.out" },
           "contact_show"
         );
 

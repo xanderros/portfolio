@@ -3,11 +3,12 @@ const imageUrl = process.env.REACT_APP_IMAGE_URL;
 function ProjectFigure({ link, img, alt, first }) {
   return (
     <div
-      className={
-        first
-          ? "projects__cover projects__cover_first"
-          : "projects__cover projects__cover_hidden"
-      }
+      // className={`projects__cover projects__cover_${
+      //   first ? "first" : "hidden"
+      // }${link ? " hoverable" : ""}`}
+      className={`projects__cover projects__cover_${
+        first ? "first" : "hidden"
+      }`}
     >
       <a
         href={link}

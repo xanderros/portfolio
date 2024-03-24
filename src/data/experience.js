@@ -25,7 +25,7 @@ export default [
     ],
   },
   {
-    company: "WEB Secret",
+    company: "dev.family",
     position: "Frontend Developer",
     period: "Jun 2013 - Aug 2018",
     activity: [

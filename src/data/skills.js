@@ -12,11 +12,12 @@ export default [
     main: true,
   },
   {
-    skill: "Redux",
+    skill: "Redux / Redux Toolkit",
     main: true,
   },
   {
-    skill: "Redux Toolkit",
+    skill: "TypeScript",
+    main: true,
   },
   {
     skill: "Redux Thunks",

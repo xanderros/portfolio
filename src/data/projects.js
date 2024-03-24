@@ -9,7 +9,6 @@ export default [
   },
   {
     site: "E-commerce (fashion industry)",
-    // desc: "Online fashion brand shop",
     desc: "Fashion brand shop with online ordering (NDA)",
     tech: "React, React Router, Redux Toolkit, Redux Thunk, React testing library, Jest, HTML5, SCSS, JS",
     color: "#fcead4",
